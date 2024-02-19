@@ -1,0 +1,806 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+/* custom css classes */
+
+.button-color {
+    background: linear-gradient(to top, rgb(181 199 35), #ffffff 100%);
+    border: 1px solid rgb(50, 50, 63);
+    border-radius: 5px;
+    color: rgb(47, 47, 47);
+    font-weight: bold;
+}
+
+.button-color2 {
+    border: 1px solid rgb(181 199 35);
+    color: #8cac0b;
+    color: rgb(37, 165, 35);
+}
+
+.button-color2:hover {
+    color: white;
+    background: #8cac0b;
+    transition: all 0.3s;
+
+}
+
+
+/* ----------------------------------------------------- Header section Start -------------------------------------------------- */
+
+.navigation {
+    background: linear-gradient(to right, #86ff8a, #fffc87 100%);
+    background: linear-gradient(to right, #ffffff, #fdfdec 100%);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 999;
+    border-radius: 10px;
+}
+
+.navbar a {
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.navbar-nav a {
+    color: rgb(2, 2, 2) !important;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px 15px;
+}
+
+
+
+.navbar-nav a:hover {
+    transform: scale(1.2);
+    transition: all .2;
+}
+
+/* navbar dropdown */
+
+.dropdown-minu {
+    position: absolute;
+    width: 250px;
+    top: 90%;
+    left: 5%;
+    background: radial-gradient(circle, #fffdeb, #f6ffd1 100%) !important;
+    border: 1px solid rgb(62, 62, 62);
+    box-shadow: 0px 0px 5px rgb(56, 56, 56);
+    border-radius: 5px;
+    opacity: 0;
+    display: none;
+    transition: all 0.3s ease-out 0s;
+}
+
+.navbar-nav .dropdown-minu a {
+    text-transform: none;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-family: serif;
+}
+
+.navbar-nav .dropdown-minu a:hover {
+    transform: translateX(10px);
+}
+
+.navbar-nav .navbar-dropdown:hover .dropdown-minu {
+    display: block;
+    opacity: 1;
+    transition: all .3s ease-out 0s;
+}
+
+
+
+/* navbar icons */
+.nav-account .dropdown-menu {
+    position: absolute !important;
+    left: -130px;
+    top: 50px;
+
+}
+
+.nav-account ul li a {
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: none !important;
+    transform: none;
+}
+
+.nav-account .login {
+    font-size: 1rem;
+    background: linear-gradient(to bottom, rgb(255, 230, 172) 0, #e4c421);
+    font-family: serif;
+    border: 1px solid rgb(119, 119, 119);
+    border-radius: 30px;
+}
+
+.nav-account .login:hover {
+    background: linear-gradient(to bottom, rgb(255, 255, 172) 0, #ffe02e);
+
+}
+
+
+.nav-account a i {
+    font-size: 1.4rem;
+}
+
+
+
+
+/* <!----------------------------------------- user login signup poup start here---------------------------------------------> */
+
+#signup-popup-form {
+    display: none;
+}
+
+.login-popup-form .form-control,
+.signup-popup-form .form-control {
+    border: 1px solid rgba(29, 29, 29, 0.474) !important;
+}
+
+/* <!----------------------------------------- search box popup start here---------------------------------------------> */
+.searchbox {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    display: none;
+}
+
+.searchbox .input-group {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.604);
+}
+
+.searchbox i {
+    font-size: 1.1rem;
+}
+
+.searchbox i:hover {
+    cursor: pointer;
+    color: #d9d9d9;
+}
+
+
+/* --------------------- My cart list start -------------------- */
+
+.mycartlist {
+    background: #ffe9b0;
+    z-index: 99;
+    /* overflow-y: scroll; */
+    height: 80vh;
+    width: 21rem;
+    position: fixed;
+    top: 13%;
+    right: 1.8rem;
+    box-shadow: 1px 0px 5px black;
+    display: none;
+}
+
+.mycartlist i {
+    cursor: pointer;
+}
+
+.mycartlist img {
+    height: 80px;
+    width: 80px;
+    padding: 3px;
+    object-fit: contain;
+    background: rgb(235, 235, 235);
+}
+
+
+/* User logout popup */
+.user-logout-popup {
+    background: rgb(237, 255, 210);
+    z-index: 99;
+    border-radius: 15px;
+    position: fixed;
+    top: 80px;
+    right: 10px;
+    box-shadow: 1px 0px 5px black;
+    display: none;
+}
+
+.user-logout-popup ul li {
+    font-family: serif !important;
+    margin: 10px 10px !important;
+}
+
+.user-logout-popup ul a:hover {
+    color: green !important;
+}
+
+.user-logout-popup ul li:hover {
+    transform: translateX(5px) !important;
+    transition: all 0.2s;
+
+}
+
+
+
+/* responsive phone navbar */
+
+.phone-navigation {
+    background: linear-gradient(to right, #e7d33e, #a8c142 100%);
+    background: linear-gradient(to bottom, #ebffec, #deffd7 100%);
+    border-radius: 12px;
+    z-index: 999;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.631);
+}
+
+
+.phone-navigation i {
+    font-size: 1.4rem !important;
+    border-radius: 10px !important;
+    background: #fe8100;
+    color: rgb(255, 255, 255) !important;
+    padding: 4px 10px;
+}
+
+.phone-navigation a div {
+    color: rgb(0, 0, 0) !important;
+    font-weight: bold;
+}
+
+/*--------------------------- slider ------------------------------ */
+
+.slider1,
+.slider2 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 22rem 0rem;
+}
+
+.slider1 {
+    background-image: url(../Img/Slider1.jpg);
+
+}
+
+.slider2 {
+    background-image: url(../Img/Slider2.jpg);
+}
+
+.carousel-caption {
+    bottom: 12rem;
+}
+
+.discount-text {
+    color: #8cac0b;
+    font-family: cursive;
+}
+
+.carousel-caption h1 {
+    color: #332929;
+    font-size: 4.5rem;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Cormorant Upright', serif;
+}
+
+.carousel-caption h1 .heading-title {
+    color: #ff7700;
+}
+
+.carousel-caption p {
+    font-size: 1.12rem;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    color: rgb(22, 22, 22);
+}
+
+.section-heading h4 {
+    font-family: serif;
+}
+
+
+/* ----------------------------------- catogary  section  ----------------------------------- */
+
+.catogary-section {
+    background: radial-gradient(circle, white, #fff0a6);
+}
+
+.catogary-section .carousel-cell {
+    width: 70px;
+    margin: 20px;
+}
+
+.catogary-section .carousel-cell::before {
+    display: block;
+}
+
+.catogary-section .carousel-cell img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 1px dashed rgb(233, 9, 9);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6), 3px 1px 4px rgba(219, 25, 25, 0.813);
+    padding: 6px;
+}
+
+.catogary-section .carousel-cell p {
+    font-size: 0.9rem;
+    font-family: serif;
+    border-top: 2px solid black;
+    margin-top: 10px !important;
+}
+
+
+
+/*-------------------- offer-section --------------------*/
+
+.offer-section .card {
+    border-radius: 20px;
+    background: rgb(242, 242, 242);
+}
+
+.offer-section .card:hover {
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.364);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.offer-section .card img {
+    object-fit: contain;
+}
+
+.offer-section .card h5 {
+    font-family: serif;
+    font-size: 1.5rem;
+}
+
+.offer-section .card h3 {
+    font-family: "Pacifico", Sans-serif;
+    font-size: 1.3rem;
+}
+
+
+/*-----------------------------------&&&&&&&&  Product AND latest Product section start &&&&&&&& ------------------------------------*/
+
+.product-section .carousel-cell,
+.latest-product .carousel-cell {
+    width: 238px;
+    margin-right: 10px;
+}
+
+.product-section .carousel-cell::before,
+.latest-product .carousel-cell::before {
+    display: block;
+}
+
+.flickity-page-dots {
+    display: none;
+}
+
+
+.product-section .card,
+.latest-product .card {
+    border: 1px solid rgb(65, 65, 65);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.product-section .card-body .price,
+.latest-product .card-body .price {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+.product-list .card-body .card-title {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.product-list .card img {
+    object-fit: contain;
+    height: 130px !important;
+    width: 100% !important;
+    transition: all 0.2s;
+}
+
+.product-list .card:hover img {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+.product-list .discount-text {
+    height: 80px;
+    width: 150px;
+}
+
+.product-list .discount-text div {
+    border-radius: 20px;
+}
+
+.product-list .product-hover-icons div {
+    position: absolute;
+    right: 0;
+    color: white;
+    opacity: 0;
+}
+
+
+.product-list .product-hover-icons {
+    position: absolute;
+    top: 2%;
+    left: -5%;
+    height: fit-content;
+    width: 100%;
+}
+
+
+.product-list .product-hover-icons a {
+    border-radius: 10px;
+    background: #effffc;
+    text-align: center;
+    display: none;
+    transition: all 0.3s;
+    color: #000;
+    width: 50px;
+    width: 50px;
+}
+
+.product-list .product-hover-icons a i {
+    font-size: 1.4rem;
+    transform: translateX(15px);
+}
+
+.product-list .product-hover-icons a:hover {
+    background: rgb(102, 216, 31);
+    color: white;
+}
+
+.product-list .card:hover .product-hover-icons a {
+    display: block;
+    box-shadow: 0px 0px 5px black;
+}
+
+.product-list .card:hover .product-hover-icons div {
+    transform: translatey(15px);
+    transition: all 0.2s 0.2s;
+    opacity: 1;
+}
+
+
+/* ---------------- banner section1 ----------------   */
+.banner-section1 {
+    background: url(../Img/banner1-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0px;
+    background-attachment: fixed;
+}
+
+
+/* ---------------- banner section2 ----------------   */
+.banner-section2 {
+    background: url(../Img/banner2-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0px;
+    background-attachment: fixed;
+}
+
+.banner-section2 h1 {
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+}
+
+.banner-section2 h2 {
+    font-size: 2.3rem;
+}
+
+/* ------------------------------ service section  ------------------------------  */
+
+.service-section .card {
+    border: 1px solid rgb(75, 75, 75);
+    border-radius: 15px;
+    height: 100%;
+}
+
+.service-section .card img {
+    object-fit: cover;
+    width: 100%;
+    padding: 5px;
+}
+
+.service-section .card h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: serif;
+}
+
+
+/* ------------------------------------ footer start  ------------------------------------ */
+.footer {
+    background: url(../Img/footer-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background: radial-gradient(circle, rgb(169, 255, 133), rgb(77, 128, 0)); */
+}
+
+.footer h4 {
+    font-size: 1.3rem;
+    color: rgb(34, 34, 34);
+    text-shadow: 2px 2px 2px rgba(230, 227, 227, 0.723);
+}
+
+.footer p,
+.footer li a {
+    /* text-shadow: 1px 1px 2px rgb(109, 58, 58); */
+    text-shadow: 1px 1px 1px rgba(62, 62, 62, 0.57);
+    font-size: 1.1rem;
+    color: rgb(77, 77, 77) !important;
+}
+
+.footer .social-icon i {
+    background: #ffffff;
+    padding: 0.3rem;
+    font-size: 1.3rem;
+    border-radius: 2px;
+    text-shadow: none;
+
+}
+
+.footer .social-icon a:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.footer li:hover {
+    transform: translateX(10px);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+
+
+/*################################################ Product-details Page start ################################################*/
+
+.Product-details {
+    padding-top: 100px;
+}
+
+.Product-details-header {
+    background: #ffffff;
+    box-shadow: 2px 0px 5px 5px rgba(0, 0, 0, 0.278);
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.Product-details .left img {
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Product-details .left .sub-img img {
+    height: 60px;
+    width: 60px;
+}
+
+.Product-details .left .sub-img img:hover {
+    cursor: pointer;
+}
+
+.Product-details .right .total {
+    width: 80px !important;
+    user-select: none;
+    outline: none;
+}
+
+.Product-details .right input[type=button]:focus {
+    outline: none;
+}
+
+
+.related-product .product-list .card {
+    border: 1px solid rgb(65, 65, 65);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+
+/* -####################################  View cart page ####################################-*/
+.viewcart {
+    padding: 10px 0px 40px 0px;
+    margin-top: 50px !important;
+    background: url(../Img/wishlist-page-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.viewcart-list {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.viewcart-list table tr th {
+    padding: 18px;
+    font-size: 1.1rem;
+}
+
+.viewcart-list table tr {
+    border: 1px solid rgba(171, 171, 171, 0.645);
+
+}
+
+.viewcart-list table tr td {
+    border-style: double;
+    padding: 13px;
+    text-align: center;
+}
+
+.viewcart-list table .save-btn {
+    border: 1px solid green;
+    color: green;
+}
+
+.viewcart-list table .save-btn:hover {
+    background: #109e10;
+    color: white;
+}
+
+.viewcart-list table tr td a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.viewcart-list table tr td a:hover {
+    color: gray;
+}
+
+.viewcart-list table td img {
+    height: 80px;
+    width: 80px;
+    background: #dcdbdb;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.viewcart-list table td img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.viewcart-list table td i {
+    color: red !important;
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+
+.viewcart-list table tr:nth-child(even) {
+    background: #f0f0f0;
+
+}
+
+
+/* -####################################  wishlis  page ####################################-*/
+
+.wishlis-page-details {
+    margin-top: 80px;
+    background: url(../Img/wishlist-page-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* -####################################  user profile page ####################################-*/
+
+.profile-page-details .right-side-content {
+
+    background: url(../Img/profile-page-bg.jpg) no-repeat;
+    background-size: cover;
+    /* background: radial-gradient(circle, white, rgb(255, 239, 209)); */
+
+}
+
+.profile-page-details .right-side-content .form-control {
+    border: 1px solid rgb(46, 46, 46);
+}
+
+.profile-page-details .user-profile {
+    background: radial-gradient(circle, #fffefd, #c7ffb9);
+    border-radius: 20px;
+}
+
+.profile-page-details .profile-left-nav-list {
+
+    background: linear-gradient(to bottom, rgb(253 255 160), #cbffa3);
+    border-radius: 5px;
+}
+
+.profile-page-details {
+    margin-top: 105px;
+}
+
+.profile-left-nav-list ul a {
+    color: black;
+    text-decoration: none !important;
+}
+
+.profile-left-nav-list ul a:hover li {
+    background: #5bd137 !important;
+    color: white !important;
+    transition: all 0.2s;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transform: translateX(10px);
+}
+
+.profile-page {
+    height: 10px !important;
+}
+
+.profile-page-details .left-side,
+.profile-page-details .right-side-content {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.profile-page-details .left-side div {
+    position: relative;
+}
+
+.profile-page-details .left-side .edit-pic {
+    position: absolute;
+    top: 75px;
+    right: 38%;
+    /* display: none; */
+}
+
+.profile-page-details .left-side img:hover .profile-page-details .left-side div i {
+    /* display: block !important; */
+    background: #000 !important;
+}
+
+/* -####################################  user profile Address  ####################################-*/
+
+
+
+.old-addres-form .address-list {
+    border: 1px solid rgb(79, 79, 79);
+    background: #f3f3f3b0 !important;
+
+}
+
+
+
+
+/* -####################################  orser page start ####################################-*/
+.right-side-content .order-list img {
+    height: 80px;
+    width: 100%;
+    border: 1px solid rgb(136, 136, 136);
+    background: #dedede;
+    padding: 5px;
+    object-fit: contain;
+}
+
+.order-list {
+    background: #f3f3f3 !important;
+    padding: 5px;
+
+}

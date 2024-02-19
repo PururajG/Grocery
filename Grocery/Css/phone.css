@@ -1,0 +1,71 @@
+@media only screen and (max-width:992px) {
+
+    .phone-navigation a div {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        padding-bottom: 3.5rem;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+
+    .slider1,
+    .slider2 {
+        padding: 20rem 0rem;
+    }
+
+    .carousel-caption h1 {
+        font-size: 3rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    /* ------------------------------ service section  ------------------------------  */
+
+    .service-section .card img {
+        object-fit: contain;
+        height: 150px;
+    }
+
+}
+
+
+@media only screen and (max-width:576px) {
+
+
+    /*------------------  Product AND latest Product section start-----------------*/
+
+    .product-section .carousel-cell,
+    .latest-product .carousel-cell {
+        width: 290px;
+    }
+
+
+    .carousel-caption h1 {
+        font-size: 2.22rem;
+    }
+
+    /*---------------- banner2---------------- */
+    .banner-section1 {
+        padding: 20px 0px;
+
+    }
+
+    .banner-section2 {
+        padding: 50px 0px;
+    }
+
+    .banner-section2 h1 {
+        font-size: 1.6rem;
+    }
+
+    .banner-section2 h2 {
+        font-size: 1.6rem;
+    }
+
+}
