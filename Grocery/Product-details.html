@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocery Website</title>
+    <title>grocery</title>
     <!-- Bootstrap css  link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >    
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script> 
     <!-- Font awasome icon link -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- cdn link for font style or icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+         />
     <!-- cdn link for zoom effect on img -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <!-- Bootstrap icon link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--Flickity css link -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- Custom css for zoom effect link -->
     <link rel="stylesheet" href="Css/magnify.css">
     <!-- Custom css link -->
@@ -26,8 +28,7 @@
     <link rel="stylesheet" href="Css/phone.css">
     <script src="app.js"></script>
 
-</head>
-
+</head> 
 <body>
     <!----------------------------------------------- Header section start ----------------------------------------------->
 
@@ -312,7 +313,7 @@
         <div class="phone-navigation d-block d-lg-none position-fixed left-0 bottom-0 w-100">
             <div class="d-flex justify-content-around pt-2">
                 <div class="text-center">
-                    <a href="index.html" class="text-decoration-none text-dark" id="Home">
+                    <a href="afterlogin.html" class="text-decoration-none text-dark" id="Home">
                         <i class="bi-house-door-fill"></i>
                         <div class="mt-2">Home</div>
                     </a>
@@ -332,7 +333,7 @@
                     </a>
                 </div>
                 <div class="text-center">
-                    <a href="#" class="text-decoration-none text-dark"  id="Login">
+                    <a href="user profile.html" class="text-decoration-none text-dark"  id="Login">
                         <i class="bi-person-fill"></i>
                         <div class="mt-2">Profile</div>
                     </a>
@@ -340,7 +341,6 @@
 
             </div>
         </div>
-
     </header>
 
     
@@ -425,381 +425,369 @@
     <!----------------------------------------------- Product details section end ----------------------------------------------->
 
     <!----------------------------------------------- Product section start ----------------------------------------------->
-    <div class="related-product mt-2 py-5 bg-light">
-        <div class="text-center section-heading">
-            <h3><span class="">R</span>elated Products</h3>
-        </div>
+     <!------------------------------------- product section ------------------------------------->
 
-        <div class="product-list container ">
-            <div class="row mt-5 g-3 mx-4">
-                <div class="col-md-3">
-                    <div class="card  ">
-                        <img src="Img/Veg (1).png" class="card-img-top" alt="img not found">
-                        <div class="image-overly ">
-                            <div class="card-img-overlay discount-text">
-                                <div class="bg-danger text-light w-50 p-2">
-                                    <span> -10%</span>
+     <div class="product-section  shadow">
+
+        <div class="product-list  col-11 mx-auto py-5">
+
+            <div class="row">
+
+                <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay" : true , "cellAlign": "center" }'>
+                    <div class="carousel-cell">
+                        <div class="card shadow text-center ">
+                            <img src="Img/Veg (1).png" class="card-img-top" alt="img not found">
+
+                            <div class="image-overly ">
+                                <div class="card-img-overlay discount-text">
+                                    <div class="bg-danger text-light w-50 p-2">
+                                        <span> -10%</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="card-img-overlay product-hover-icons ">
-                            <div>
-                                <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi bi-eye"></i></a>
-                                <a title="Like" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-suit-heart"></i></a>
-                                <a title="Add to cart" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-cart4"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="card-body">
-                            <a href="Product-details.html" class="card-title fs-5 text-dark">Broccoli</a>
-                            <p>In Stock - 2kg</p>
-                            <p class="price">90 ₹ <span class="ms-4 text-danger"><del>100 ₹ </del></span></p>
-                            <a href="#" class="btn btn-outline-success"><i class="bi bi-cart-fill"></i> Add to Cart</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-3">
-                    <div class="card ">
-                        <img src="Img/Veg (2).png" class="card-img-top" alt="img not found">
-                       
-                        <div class="card-img-overlay product-hover-icons ">
-                            <div>
-                                <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi bi-eye"></i></a>
-                                <a title="Like" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-suit-heart"></i></a>
-                                <a title="Add to cart" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-cart4"></i></a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <a href="Product-details.html" class="card-title fs-5 text-dark">Tomato</a>
-                            <p>In Stock - 2kg</p>
-                            <p class="price">80 ₹ </p>
-                            <a href="#" class="btn btn-outline-success"><i class="bi bi-cart-fill"></i> Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card ">
-                        <img src="Img/Veg (3).png" class="card-img-top" alt="img not found">
-                        <div class="image-overly ">
-                            <div class="card-img-overlay discount-text">
-                                <div class="bg-danger text-light w-50 p-2">
-                                    <span> -10%</span>
+                            <div class="card-img-overlay product-hover-icons">
+                                <div>
+                                    <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
+                                            class="bi bi bi-eye"></i></a>
+                                    <a title="Like" class="m-1 p-2" href="#"><i class="bi bi-suit-heart"></i></a>
+                                    <a title="Add to cart" class="m-1 p-2" href="#"><i class="bi bi-cart4"></i></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-img-overlay product-hover-icons ">
-                            <div>
-                                <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi bi-eye"></i></a>
-                                <a title="Like" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-suit-heart"></i></a>
-                                <a title="Add to cart" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-cart4"></i></a>
+
+                            <div class="card-body">
+                                <a href="Product-details.html" class="card-title text-dark">Broccoli</a>
+                                <p>Qnt / Unit : 2kg</p>
+                                <p class="price"> <span class=" text-danger"><del>₹500 </del></span><span class="ms-4">
+                                        ₹190 </span> </p>
+                                <a href="#" class="btn button-color2"><i class="bi bi-cart-fill"></i> Add to
+                                    Cart</a>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <a href="Product-details.html" class="card-title fs-5 text-dark">Spinach</a>
-                            <p>In Stock - 2kg</p>
-                            <p class="price">90 ₹ <span class="ms-4 text-danger"><del>100 ₹ </del></span></p>
-                            <a href="#" class="btn btn-outline-success"><i class="bi bi-cart-fill"></i> Add to Cart</a>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <div class="card shadow text-center ">
+                            <img src="Img/Veg (2).png " class="card-img-top" alt="img not found">
+
+
+                            <div class="card-img-overlay product-hover-icons">
+                                <div>
+                                    <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
+                                            class="bi bi bi-eye"></i></a>
+                                    <a title="Like" class="m-1 p-2" href="#"><i class="bi bi-suit-heart"></i></a>
+                                    <a title="Add to cart" class="m-1 p-2" href="#"><i class="bi bi-cart4"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <a href="Product-details.html" class="card-title text-dark">Tomato</a>
+                                <p>Qnt / Unit : 2kg</p>
+                                <p class="price"> <span class=" text-danger"><del>₹200 </del></span><span class="ms-4">
+                                        ₹190 </span> </p>
+                                <a href="#" class="btn button-color2"><i class="bi bi-cart-fill"></i> Add to
+                                    Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <div class="card shadow text-center ">
+                            <img src="Img/Veg (3).png " class="card-img-top" alt="img not found">
+
+                            <div class="image-overly ">
+                                <div class="card-img-overlay discount-text">
+                                    <div class="bg-danger text-light w-50 p-2">
+                                        <span> -10%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-img-overlay product-hover-icons">
+                                <div>
+                                    <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
+                                            class="bi bi bi-eye"></i></a>
+                                    <a title="Like" class="m-1 p-2" href="#"><i class="bi bi-suit-heart"></i></a>
+                                    <a title="Add to cart" class="m-1 p-2" href="#"><i class="bi bi-cart4"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <a href="Product-details.html" class="card-title text-dark">Broccoli</a>
+                                <p>Qnt / Unit : 2kg</p>
+                                <p class="price"> <span class=" text-danger"><del>₹350 </del></span><span class="ms-4">
+                                        ₹240 </span> </p>
+                                <a href="#" class="btn button-color2"><i class="bi bi-cart-fill"></i> Add to
+                                    Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <div class="card shadow text-center ">
+                            <img src="Img/Veg (4).png" class="card-img-top" alt="img not found">
+
+
+                            <div class="card-img-overlay product-hover-icons">
+                                <div>
+                                    <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
+                                            class="bi bi bi-eye"></i></a>
+                                    <a title="Like" class="m-1 p-2" href="#"><i class="bi bi-suit-heart"></i></a>
+                                    <a title="Add to cart" class="m-1 p-2" href="#"><i class="bi bi-cart4"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <a href="Product-details.html" class="card-title text-dark">Cauliflowe</a>
+                                <p>Qnt / Unit : 2kg</p>
+                                <p class="price"> <span class=" text-danger"><del>₹200 </del></span><span class="ms-4">
+                                        ₹120 </span> </p>
+                                <a href="#" class="btn button-color2"><i class="bi bi-cart-fill"></i> Add to
+                                    Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <div class="card shadow text-center ">
+                            <img src="Img/Veg (5).png" class="card-img-top" alt="img not found">
+
+                            <div class="image-overly ">
+                                <div class="card-img-overlay discount-text">
+                                    <div class="bg-danger text-light w-50 p-2">
+                                        <span> -10%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-img-overlay product-hover-icons">
+                                <div>
+                                    <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
+                                            class="bi bi bi-eye"></i></a>
+                                    <a title="Like" class="m-1 p-2" href="#"><i class="bi bi-suit-heart"></i></a>
+                                    <a title="Add to cart" class="m-1 p-2" href="#"><i class="bi bi-cart4"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <a href="Product-details.html" class="card-title text-dark">Potato</a>
+                                <p>Qnt / Unit : 2kg</p>
+                                <p class="price"> <span class=" text-danger"><del>₹100 </del></span><span class="ms-4">
+                                        ₹60 </span> </p>
+                                <a href="#" class="btn button-color2"><i class="bi bi-cart-fill"></i> Add to
+                                    Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <div class="card shadow text-center ">
+                            <img src="Img/Veg (6).png" class="card-img-top" alt="img not found">
+
+                            <div class="image-overly ">
+                                <div class="card-img-overlay discount-text">
+                                    <div class="bg-danger text-light w-50 p-2">
+                                        <span> -10%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-img-overlay product-hover-icons">
+                                <div>
+                                    <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
+                                            class="bi bi bi-eye"></i></a>
+                                    <a title="Like" class="m-1 p-2" href="#"><i class="bi bi-suit-heart"></i></a>
+                                    <a title="Add to cart" class="m-1 p-2" href="#"><i class="bi bi-cart4"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <a href="Product-details.html" class="card-title text-dark">Broccoli</a>
+                                <p>Qnt / Unit : 2kg</p>
+                                <p class="price"> <span class=" text-danger"><del>₹300 </del></span><span class="ms-4">
+                                        ₹200 </span> </p>
+                                <a href="#" class="btn button-color2"><i class="bi bi-cart-fill"></i> Add to
+                                    Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <div class="card shadow text-center ">
+                            <img src="Img/Veg (7).png" class="card-img-top" alt="img not found">
+
+                            <div class="card-img-overlay product-hover-icons">
+                                <div>
+                                    <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
+                                            class="bi bi bi-eye"></i></a>
+                                    <a title="Like" class="m-1 p-2" href="#"><i class="bi bi-suit-heart"></i></a>
+                                    <a title="Add to cart" class="m-1 p-2" href="#"><i class="bi bi-cart4"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <a href="Product-details.html" class="card-title text-dark">Onion</a>
+                                <p>Qnt / Unit : 2kg</p>
+                                <p class="price"> <span class=" text-danger"><del>₹200 </del></span><span class="ms-4">
+                                        ₹190 </span> </p>
+                                <a href="#" class="btn button-color2"><i class="bi bi-cart-fill"></i> Add to
+                                    Cart</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card ">
-                        <img src="Img/Veg (4).png" class="card-img-top" alt="img not found">
-                        <!-- <div class="image-overly ">
-                            <div class="card-img-overlay discount-text">
-                                <div class="bg-danger text-light w-50 p-2">
-                                    <span> -10%</span>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="card-img-overlay product-hover-icons ">
-                            <div>
-                                <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi bi-eye"></i></a>
-                                <a title="Like" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-suit-heart"></i></a>
-                                <a title="Add to cart" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-cart4"></i></a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <a href="Product-details.html" class="card-title fs-5 text-dark">Cauliflower </a>
-                            <p>In Stock - 2kg</p>
-                            <p class="price">70 ₹ </p>
-                            <a href="#" class="btn btn-outline-success"><i class="bi bi-cart-fill"></i> Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-3">
-                    <div class="card ">
-                        <img src="Img/Veg (5).png" class="card-img-top" alt="img not found">
-                        <div class="image-overly ">
-                            <div class="card-img-overlay discount-text">
-                                <div class="bg-danger text-light w-50 p-2">
-                                    <span> -10%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-img-overlay product-hover-icons ">
-                            <div>
-                                <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi bi-eye"></i></a>
-                                <a title="Like" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-suit-heart"></i></a>
-                                <a title="Add to cart" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-cart4"></i></a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <a href="Product-details.html" class="card-title fs-5 text-dark">Organic Vegetables</a>
-                            <p>In Stock - 2kg</p>
-                            <p class="price">110 ₹ <span class="ms-4 text-danger"><del>120 ₹ </del></span></p>
-                            <a href="#" class="btn btn-outline-success"><i class="bi bi-cart-fill"></i> Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card ">
-                        <img src="Img/Veg (6).png" class="card-img-top" alt="img not found">
-                        <div class="image-overly ">
-                            <div class="card-img-overlay discount-text">
-                                <div class="bg-danger text-light w-50 p-2">
-                                    <span> -10%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-img-overlay product-hover-icons ">
-                            <div>
-                                <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi bi-eye"></i></a>
-                                <a title="Like" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-suit-heart"></i></a>
-                                <a title="Add to cart" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-cart4"></i></a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <a href="Product-details.html" class="card-title fs-5 text-dark">Organic Vegetables</a>
-                            <p>In Stock - 2kg</p>
-                            <p class="price">80 ₹ <span class="ms-4 text-danger"><del>90 ₹ </del></span></p>
-                            <a href="#" class="btn btn-outline-success"><i class="bi bi-cart-fill"></i> Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card ">
-                        <img src="Img/Veg (7).png" class="card-img-top" alt="img not found">
-                        <!-- <div class="image-overly ">
-                            <div class="card-img-overlay discount-text">
-                                <div class="bg-danger text-light w-50 p-2">
-                                    <span> -10%</span>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="card-img-overlay product-hover-icons ">
-                            <div>
-                                <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi bi-eye"></i></a>
-                                <a title="Like" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-suit-heart"></i></a>
-                                <a title="Add to cart" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-cart4"></i></a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <a href="Product-details.html" class="card-title fs-5 text-dark">Organic Vegetables</a>
-                            <p>In Stock - 2kg</p>
-                            <p class="price">80 ₹ </p>
-                            <a href="#" class="btn btn-outline-success"><i class="bi bi-cart-fill"></i> Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card ">
-                        <img src="Img/Veg (8).png" class="card-img-top" alt="img not found">
-                        <!-- <div class="image-overly ">
-                            <div class="card-img-overlay discount-text">
-                                <div class="bg-danger text-light w-50 p-2">
-                                    <span> -10%</span>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="card-img-overlay product-hover-icons ">
-                            <div>
-                                <a title="Quick View" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi bi-eye"></i></a>
-                                <a title="Like" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-suit-heart"></i></a>
-                                <a title="Add to cart" class="m-1 p-2" href="Product-details.html"><i
-                                        class="bi bi-cart4"></i></a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <a href="Product-details.html" class="card-title fs-5 text-dark">Cabbage</a>
-                            <p>In Stock - 2kg</p>
-                            <p class="price">80 ₹</p>
-                            <a href="#" class="btn btn-outline-success"><i class="bi bi-cart-fill"></i> Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
             </div>
-
         </div>
     </div>
     <!----------------------------------------------- Product section end ----------------------------------------------->
 
     <!----------------------------------------------- Footer section start ----------------------------------------------->
 
-    <div class="footer py-5 mt-5">
-
+    <div class="footer py-5">
         <div class="col-11 mx-auto px-4 py-5">
-
-
-            <div class="row g-3">
-                <div class="col-lg-3 col-sm-8">
-                    <div class=" ">
-                        <h4 class="fw-bold"> Grocery </h4>
-                        <p class="text-secondary"> Online Grossry shopping platform where user find their choice and
-                            we
-                            help the user to provide best and good grossery product in an affordable price</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-sm-4">
-                    <div class=" ">
-                        <h4 class="fw-bold"> New Products </h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    Vegitables
-
-
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    Fruits
-                                </a></li>
-                            <li><a href="#" class="text-decoration-none">
-                                    <i class="bi bi-caret-right-fill"></i> Beverages
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-sm-4">
-                    <div class=" ">
-                        <h4 class="fw-bold"> Quick Links </h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    About
-
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    Offers & Discounts</a></li>
-                            <li><a href="#" class="text-decoration-none">
-                                    <i class="bi bi-caret-right-fill"></i> Get Coupan
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    Contact
-                                    Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-4">
-                    <div class=" ">
-                        <h4 class="fw-bold"> Help & Support </h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-decoration-none "><i class="bi bi-caret-right-fill"></i> FAQ
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none "><i class="bi bi-caret-right-fill"></i>
-                                    Terms &
-                                    Conditions
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none ">
-                                    <i class="bi bi-caret-right-fill"></i> Report a Payment Issue</a>
-                            </li>
-                            <!-- <li><a href="#" class="text-decoration-none "><i class="bi bi-caret-right-fill"></i> Privacy
-                                    Policy</a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-2 col-sm-4">
-                    <div class=" ">
-                        <h4 class="fw-bold"> Contact Us </h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-danger text-decoration-none"> <i
-                                        class="bi bi-telephone-inbound fs-6"></i>
-                                    +38192310201</a> </li>
-                            <li><a href="#" class="text-danger text-decoration-none"> <i
-                                        class="bi bi-geo-alt-fill fs-6"></i>
-                                    Gurgaon Delhi NCR 122003</a> </li>
-                            <li><a href="#" class="text-danger text-decoration-none"> <i
-                                        class="bi bi-envelope fs-6"></i>
-                                    bitspanindia.com</a> </li>
-                        </ul>
-
-                        <div class="social-icon d-flex align-items-center gap-3">
-                            <a href="#"><i class="bi bi-facebook text-primary"></i>
-                            </a>
-                            <a href="#"><i class="bi bi-instagram text-danger"></i>
-                            </a>
-                            <a href="#"><i class="bi bi-twitter text-primary"></i>
-                            </a>
-                            <a href="#"><i class="bi bi-whatsapp text-success"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
+          <div class="row g-3">
+            <div class="col-lg-3 col-sm-8">
+              <div class=" ">
+                <h4 class="fw-bold">E-Shop</h4>
+                <p class="text-secondary">
+                  Online Grossry shopping platform where user find their choice
+                  and we help the user to provide best and good grossery product
+                  in an affordable price
+                </p>
+              </div>
             </div>
-
+  
+            <div class="col-lg-2 col-sm-4">
+              <div class=" ">
+                <h4 class="fw-bold">New Products</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      ><i class="bi bi-caret-right-fill"></i>
+                      Vegitables
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      ><i class="bi bi-caret-right-fill"></i>
+                      Fruits
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">
+                      <i class="bi bi-caret-right-fill"></i> Beverages
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-lg-2 col-sm-4">
+              <div class=" ">
+                <h4 class="fw-bold">Quick Links</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      ><i class="bi bi-caret-right-fill"></i>
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      ><i class="bi bi-caret-right-fill"></i> Offers &
+                      Discounts</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">
+                      <i class="bi bi-caret-right-fill"></i> Get Coupan
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      ><i class="bi bi-caret-right-fill"></i> Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-sm-4">
+              <div class=" ">
+                <h4 class="fw-bold">Help & Support</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      ><i class="bi bi-caret-right-fill"></i> FAQ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      ><i class="bi bi-caret-right-fill"></i>
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">
+                      <i class="bi bi-caret-right-fill"></i> Report a Payment
+                      Issue</a
+                    >
+                  </li>
+                  <!-- <li><a href="#" class="text-decoration-none "><i class="bi bi-caret-right-fill"></i> Privacy
+                                      Policy</a>
+                              </li> -->
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-lg-2 col-sm-4">
+              <div class=" ">
+                <h4 class="fw-bold">Contact Us</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-danger text-decoration-none">
+                      <i class="bi bi-telephone-inbound fs-6"></i> +91-9999999999</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-danger text-decoration-none">
+                      <i class="bi bi-geo-alt-fill fs-6"></i> Near sdm court sambhal, 244302</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-danger text-decoration-none">
+                      <i class="bi bi-envelope fs-6  "></i> pururajsbl@gmail.com</a
+                    >
+                  </li>
+                </ul>
+  
+                <div class="social-icon d-flex align-items-center gap-3">
+                  <a href="#"><i class="bi bi-facebook text-primary"></i> </a>
+                  <a href="#"><i class="bi bi-instagram text-danger"></i> </a>
+                  <a href="#"><i class="bi bi-twitter text-primary"></i> </a>
+                  <a href="#"><i class="bi bi-whatsapp text-success"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
     <div style="background: rgb(137, 197, 47);">
         <marquee behavior="" direction="left">
 
             <div class=" ">
-                <p class="text-light fw-bold pt-2">Copyright ©2022 All rights reserved | This Website is made by
-                    <span class="text-success">Team</span>
+                <p class="text-light fw-bold pt-2">Copyright © All rights reserved | This Website is made by
+                    <span class="text-success">Pururaj</span>
                 </p>
-
             </div>
         </marquee>
     </div>
-
     
-    <!-- bootstrap js link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <!--Flickity js link -->
+    <script src=" https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
 </body>
 
 </html>

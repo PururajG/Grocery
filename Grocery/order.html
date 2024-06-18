@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocery Website</title>
+    <title>grocery</title>
     <!-- Bootstrap css  link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -303,45 +303,87 @@
 
         <!-- navigation for mobile -->
 
-        <div class="phone-navigation d-block d-lg-none position-fixed left-0 bottom-0 w-100">
-            <div class="d-flex justify-content-around pt-2">
-                <div class="text-center">
-                    <a href="index.html" class="text-decoration-none text-dark" id="Home">
-                        <i class="bi-house-door-fill"></i>
-                        <div class="mt-2">Home</div>
-                    </a>
-                </div>
+        <div
+        class="phone-navigation d-block d-lg-none position-fixed left-0 bottom-0 w-100"
+      >
+        <div class="d-flex justify-content-around pt-2">
+          <div class="text-center">
+            <a
+              href="afterlogin.html"
+              class="text-decoration-none text-dark"
+              id="Home"
+            >
+              <i class="bi-house-door-fill"></i>
+              <div class="mt-2">Home</div>
+            </a>
+          </div>
 
-                <div class="text-center">
-                    <a href="Wishlist.html" class="text-decoration-none text-dark" id="About">
-                        <i class="bi-bag-heart-fill"></i>
-                        <div class="mt-2">Wishlist</div>
-                    </a>
-                </div>
+          <div class="text-center">
+            <a
+              href="Wishlist.html"
+              class="text-decoration-none text-dark"
+              id="About"
+            >
+              <i class="bi-bag-heart-fill"></i>
+              <div class="mt-2">Wishlist</div>
+            </a>
+          </div>
 
-                <div class="text-center">
-                    <a href="vewcart.html" class="text-decoration-none text-dark" id="Contact">
-                        <i class="bi-person-lines-fill"></i>
-                        <div class="mt-2">Cart</div>
-                    </a>
-                </div>
-                <div class="text-center">
-                    <a href="#" class="text-decoration-none text-dark"  id="Login">
-                        <i class="bi-person-fill"></i>
-                        <div class="mt-2">Profile</div>
-                    </a>
-                </div>
+          <div class="text-center">
+            <a
+              href="vewcart.html"
+              class="text-decoration-none text-dark"
+              id="Contact"
+            >
+              <i class="bi-person-lines-fill"></i>
+              <div class="mt-2">Cart</div>
+            </a>
+          </div>
+          <div class="text-center dropdown">
+            <a
+              class="text-decoration-none text-dark  "
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="bi-list"></i>
+              <div class="mt-2">Profile</div>
+            </a>
 
-            </div>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item fs-5" href="user profile.html">
+                  <i class="bi bi-info-circle"></i> Personal Information</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item fs-5" href="address.html"
+                  ><i class="bi bi-pin-map-fill"></i>Delivery Address</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item fs-5" href="order.html"
+                  ><i class="bi bi-cart4"></i>My order</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item fs-5" href="index.html"
+                  ><i class="bi bi-power"></i>Logout</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
 
     </header>
 
 
     <!----------------------------------------------- orser section start ----------------------------------------------->
-    <div class="col-md-11 mx-auto profile-page-details row">
+    <div class="col-11 mx-auto profile-page-details">
         <div class="row ">
-            <div class="left-side-nav col-md-3 ">
+            <div class="left-side-nav col-lg-3 ">
                 <div class="left-side ">
 
                     <div class="row user-profile py-2 px-3  text-center ">
@@ -356,7 +398,7 @@
 
                     </div>
 
-                    <div class="row profile-left-nav-list mt-2">
+                    <div class="row profile-left-nav-list mt-2 d-none d-lg-block">
                         <ul class="list-unstyled  py-2 px-3 ">
                             <a href="user profile.html" class="">
                                 <li class="px-2 py-1 my-1 fs-5"><i class="bi bi-info-circle"></i> Personal
@@ -383,15 +425,15 @@
             </div>
 
             <!-------------------------------- Here the main user right order section is start -------------------------------->
-            <div class="col-md-9">
-                <div class=" px-4 py-2  right-side-content rounded" id="My Wishlist">
-                    <div class=" py-2 d-flex justify-content-between align-items-center">
-                        <p class="fs-3 ">
+            <div class="col-lg-9">
+                <div class=" px-3 py-2  right-side-content rounded mb-lg-4 my-lg-0 my-4" id="My Wishlist">
+                    <div class=" py-2 d-sm-flex justify-content-between align-items-center">
+                        <p class="fs-4 ">
                             <strong>My Order</strong>
                         </p>
-                        <div class="order-search-box shadow">
+                        <div class="order-search-box ">
                             <div class="input-group">
-                                <input class="px-3 py-1 border" type="text" name="" id="search"
+                                <input class="px-2 py-1 border" type="text" name="" id="search"
                                     placeholder="Search here..">
                                 <label for="search" class="input-group-text bg-success text-white"><i class="bi bi-search "></i></label>
 
@@ -406,17 +448,18 @@
                             <div class="col-2">
                                 <img src="Img/patato.png" alt="loading">
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 ps-2">
                                 <a href="Product-details.html"
                                     class="fw-bold fs-5 text-decoration-none text-dark">Potato</a>
                                 <p>Qty : 2Kg</p>
 
                             </div>
-                            <div class="col-2 fw-bold ">₹80</div>
-                            <div class="col-4">
+                            <div class="col-2 fw-bold  ">₹80</div>
+
+                            <div class="col-5 text-center">
                                 <p><i class="bi bi-patch-check-fill text-danger"></i> Order on 02/06/2023</p>
                                 <p><i class="bi bi-patch-check-fill text-success"></i> Deliver on 31/05/2023</p>
-                                <div class="d-flex justify-content-start mt-3">
+                                <div class="d-flex justify-content-center mt-3">
                                     <a href="order details.html" class="btn btn-success btn-sm"><i
                                             class="bi bi-eye"></i> View Order</a>
                                     <button class="btn btn-danger btn-sm ms-1"><i class="bi bi-trash3-fill"></i> Cancle
@@ -431,7 +474,7 @@
                             <div class="col-2">
                                 <img src="Img/Frouts (10).png " alt="loading">
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 ps-2">
                                 <a href="Product-details.html"
                                     class="fw-bold fs-5 text-decoration-none text-dark">Apple</a>
                                 <p>Qty : 1Kg</p>
@@ -439,10 +482,10 @@
 
                             </div>
                             <div class="col-2 fw-bold ">₹110</div>
-                            <div class="col-4">
+                            <div class="col-5 text-center">
                                 <p><i class="bi bi-patch-check-fill text-danger"></i> Order on 02/06/2023</p>
                                 <p><i class="bi bi-patch-check-fill text-success"></i> Deliver on 31/05/2023</p>
-                                <div class="d-flex justify-content-start mt-3">
+                                <div class="d-flex justify-content-center mt-3">
                                     <a href="order details.html" class="btn btn-success btn-sm"><i
                                             class="bi bi-eye"></i> View Order</a>
                                     <button class="btn btn-danger btn-sm ms-1"><i class="bi bi-trash3-fill"></i> Cancle
@@ -462,133 +505,147 @@
 
     <!----------------------------------------------- Footer section start ----------------------------------------------->
 
-    <div class="footer py-5 mt-5">
-
+    <div class="footer py-5">
         <div class="col-11 mx-auto px-4 py-5">
-
-
-            <div class="row g-3">
-                <div class="col-lg-3 col-sm-8">
-                    <div class=" ">
-                        <h4 class="fw-bold"> Grocery </h4>
-                        <p class="text-secondary"> Online Grossry shopping platform where user find their choice and
-                            we
-                            help the user to provide best and good grossery product in an affordable price</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-sm-4">
-                    <div class=" ">
-                        <h4 class="fw-bold"> New Products </h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    Vegitables
-
-
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    Fruits
-                                </a></li>
-                            <li><a href="#" class="text-decoration-none">
-                                    <i class="bi bi-caret-right-fill"></i> Beverages
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-sm-4">
-                    <div class=" ">
-                        <h4 class="fw-bold"> Quick Links </h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    About
-
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    Offers & Discounts</a></li>
-                            <li><a href="#" class="text-decoration-none">
-                                    <i class="bi bi-caret-right-fill"></i> Get Coupan
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    Contact
-                                    Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-4">
-                    <div class=" ">
-                        <h4 class="fw-bold"> Help & Support </h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-decoration-none "><i class="bi bi-caret-right-fill"></i> FAQ
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none "><i class="bi bi-caret-right-fill"></i>
-                                    Terms &
-                                    Conditions
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none ">
-                                    <i class="bi bi-caret-right-fill"></i> Report a Payment Issue</a>
-                            </li>
-                            <!-- <li><a href="#" class="text-decoration-none "><i class="bi bi-caret-right-fill"></i> Privacy
-                                    Policy</a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-2 col-sm-4">
-                    <div class=" ">
-                        <h4 class="fw-bold"> Contact Us </h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-danger text-decoration-none"> <i
-                                        class="bi bi-telephone-inbound fs-6"></i>
-                                    +38192310201</a> </li>
-                            <li><a href="#" class="text-danger text-decoration-none"> <i
-                                        class="bi bi-geo-alt-fill fs-6"></i>
-                                    Gurgaon Delhi NCR 122003</a> </li>
-                            <li><a href="#" class="text-danger text-decoration-none"> <i
-                                        class="bi bi-envelope fs-6"></i>
-                                    bitspanindia.com</a> </li>
-                        </ul>
-
-                        <div class="social-icon d-flex align-items-center gap-3">
-                            <a href="#"><i class="bi bi-facebook text-primary"></i>
-                            </a>
-                            <a href="#"><i class="bi bi-instagram text-danger"></i>
-                            </a>
-                            <a href="#"><i class="bi bi-twitter text-primary"></i>
-                            </a>
-                            <a href="#"><i class="bi bi-whatsapp text-success"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
+          <div class="row g-3">
+            <div class="col-lg-3 col-sm-8">
+              <div class=" ">
+                <h4 class="fw-bold">E-Shop</h4>
+                <p class="text-secondary">
+                  Online Grossry shopping platform where user find their choice
+                  and we help the user to provide best and good grossery product
+                  in an affordable price
+                </p>
+              </div>
             </div>
-
+  
+            <div class="col-lg-2 col-sm-4">
+              <div class=" ">
+                <h4 class="fw-bold">New Products</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      ><i class="bi bi-caret-right-fill"></i>
+                      Vegitables
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      ><i class="bi bi-caret-right-fill"></i>
+                      Fruits
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">
+                      <i class="bi bi-caret-right-fill"></i> Beverages
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-lg-2 col-sm-4">
+              <div class=" ">
+                <h4 class="fw-bold">Quick Links</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      ><i class="bi bi-caret-right-fill"></i>
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      ><i class="bi bi-caret-right-fill"></i> Offers &
+                      Discounts</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">
+                      <i class="bi bi-caret-right-fill"></i> Get Coupan
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      ><i class="bi bi-caret-right-fill"></i> Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-sm-4">
+              <div class=" ">
+                <h4 class="fw-bold">Help & Support</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      ><i class="bi bi-caret-right-fill"></i> FAQ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      ><i class="bi bi-caret-right-fill"></i>
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">
+                      <i class="bi bi-caret-right-fill"></i> Report a Payment
+                      Issue</a
+                    >
+                  </li>
+                  <!-- <li><a href="#" class="text-decoration-none "><i class="bi bi-caret-right-fill"></i> Privacy
+                                      Policy</a>
+                              </li> -->
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-lg-2 col-sm-4">
+              <div class=" ">
+                <h4 class="fw-bold">Contact Us</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-danger text-decoration-none">
+                      <i class="bi bi-telephone-inbound fs-6"></i> +91-9999999999</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-danger text-decoration-none">
+                      <i class="bi bi-geo-alt-fill fs-6"></i> Near sdm court sambhal, 244302</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-danger text-decoration-none">
+                      <i class="bi bi-envelope fs-6  "></i> pururajsbl@gmail.com</a
+                    >
+                  </li>
+                </ul>
+  
+                <div class="social-icon d-flex align-items-center gap-3">
+                  <a href="#"><i class="bi bi-facebook text-primary"></i> </a>
+                  <a href="#"><i class="bi bi-instagram text-danger"></i> </a>
+                  <a href="#"><i class="bi bi-twitter text-primary"></i> </a>
+                  <a href="#"><i class="bi bi-whatsapp text-success"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
     <div style="background: rgb(137, 197, 47);">
         <marquee behavior="" direction="left">
 
             <div class=" ">
-                <p class="text-light fw-bold pt-2">Copyright ©2022 All rights reserved | This Website is made by
-                    <span class="text-success">Team</span>
+                <p class="text-light fw-bold pt-2">Copyright © All rights reserved | This Website is made by
+                    <span class="text-success">Pururaj</span>
                 </p>
-
             </div>
         </marquee>
     </div>
+
 
     <!-- bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

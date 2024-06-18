@@ -32,6 +32,16 @@
         height: 150px;
     }
 
+
+    /* -####################################  View cart page ####################################-*/
+
+
+    .viewcart .table-section {
+        width: 100%;
+        height: auto;
+        overflow-x: scroll;
+    }
+
 }
 
 
@@ -68,4 +78,18 @@
         font-size: 1.6rem;
     }
 
+    /* order page start here */
+    .right-side-content .order-list .order-item img {
+        padding: 1px;
+    }
+
+    .wishlist .order-list .order-item div a {
+        font-size: 1.1rem !important;
+        text-wrap: wrap !important;
+    }
+
+    .order-list .order-item button,
+    .order-list .order-item button i {
+        font-size: 0.8rem;
+    }
 }

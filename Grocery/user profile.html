@@ -1,589 +1,713 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocery Website</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grocery</title>
     <!-- Bootstrap css  link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!-- Font awasome icon link -->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
     <!-- cdn link for font style or icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Bootstrap icon link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <!-- Custom css link -->
-    <link rel="stylesheet" href="Css/style.css">
-    <link rel="stylesheet" href="Css/phone.css">
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/phone.css" />
     <script src="app.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!----------------------------------------------- Header section start ----------------------------------------------->
-    <header class="header " id="header">
-        <div class="navigation shadow">
-            <div class="">
-                <nav class="navbar navbar-expand-lg navbar-light ">
-                    <div class="container-fluid ">
-
-                        <a class="logo navbar-brand text-decoration-none  fs-4 fw-bold text-success" href="index.html">
-                            E-Shop
-                        </a>
-                        <!-- <div class="  ">
+    <header class="header" id="header">
+      <div class="navigation shadow">
+        <div class="">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a
+                class="logo navbar-brand text-decoration-none fs-4 fw-bold text-success"
+                href="index.html"
+              >
+                E-Shop
+              </a>
+              <!-- <div class="  ">
                             <img src="Img/logo.jpg" class="rounded-3 border logo" style="width: 3rem; " alt="logo">
                         </div> -->
 
-                        <div class="collapse Navigation-list navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-5">
+              <div
+                class="collapse Navigation-list navbar-collapse"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav ms-5">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
 
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="#">Home</a>
-                                </li>
+                  <li class="navbar-dropdown position-relative">
+                    <a class="nav-link" href="#">Categories</a>
+                    <div class="dropdown-minu p-2">
+                      <ul class="list-unstyled text-start">
+                        <li>
+                          <a href="#">Bakery &amp; Biscuits</a>
+                        </li>
 
+                        <li>
+                          <a href="#">Sweet Tooth</a>
+                        </li>
 
-                                <li class="navbar-dropdown position-relative"><a class="nav-link"
-                                        href="#">Categories</a>
-                                    <div class="dropdown-minu p-2 ">
-                                        <ul class="list-unstyled text-start">
+                        <li>
+                          <a href="#">Breakfast &amp; Instant Food</a>
+                        </li>
 
-                                            <li>
-                                                <a href="#">Bakery
-                                                    &amp; Biscuits</a>
-                                            </li>
+                        <li>
+                          <a href="#">Snacks &amp; Munchies</a>
+                        </li>
 
+                        <li>
+                          <a href="#">Cold Drinks &amp; Juices</a>
+                        </li>
 
-                                            <li>
-                                                <a href="#">Sweet
-                                                    Tooth</a>
-                                            </li>
+                        <li>
+                          <a href="#">Fruits &amp; Vegitables</a>
+                        </li>
 
+                        <li>
+                          <a href="#">Dairy, Bread &amp; Eggs</a>
+                        </li>
 
-                                            <li>
-                                                <a href="#">Breakfast
-                                                    &amp; Instant Food</a>
-                                            </li>
+                        <li>
+                          <a href="#">Tea, Coffee &amp; Health Drink</a>
+                        </li>
 
+                        <li>
+                          <a href="#">Atta, Rice &amp; Dal</a>
+                        </li>
 
-                                            <li>
-                                                <a href="#">Snacks
-                                                    &amp; Munchies</a>
-                                            </li>
+                        <li>
+                          <a href="#">Paan Corner</a>
+                        </li>
 
+                        <li>
+                          <a href="#">Masala, Oil &amp; More</a>
+                        </li>
 
-                                            <li>
-                                                <a href="#">Cold
-                                                    Drinks &amp; Juices</a>
-                                            </li>
+                        <li>
+                          <a href="#">Sauces &amp; Spreads</a>
+                        </li>
 
+                        <li>
+                          <a href="#">Chicken,Meat &amp; Fish</a>
+                        </li>
 
-                                            <li>
-                                                <a href="#">Fruits
-                                                    &amp; Vegitables</a>
-                                            </li>
+                        <li>
+                          <a href="#">Organic &amp; Healthy Living</a>
+                        </li>
 
+                        <li>
+                          <a href="#">Baby Care</a>
+                        </li>
 
-                                            <li>
-                                                <a href="#">Dairy,
-                                                    Bread &amp; Eggs</a>
-                                            </li>
+                        <li>
+                          <a href="#">Pharma &amp; Wellness</a>
+                        </li>
 
+                        <li>
+                          <a href="#">Cleaning Essentials</a>
+                        </li>
 
-                                            <li>
-                                                <a href="#">Tea,
-                                                    Coffee &amp; Health Drink</a>
-                                            </li>
+                        <li>
+                          <a href="#">Home &amp; Office</a>
+                        </li>
 
+                        <li>
+                          <a href="#">Personal Care</a>
+                        </li>
 
-                                            <li>
-                                                <a href="#">Atta,
-                                                    Rice &amp; Dal</a>
-                                            </li>
-
-
-                                            <li>
-                                                <a href="#">Paan
-                                                    Corner</a>
-                                            </li>
-
-
-                                            <li>
-                                                <a href="#">Masala,
-                                                    Oil &amp; More</a>
-                                            </li>
-
-
-                                            <li>
-                                                <a href="#">Sauces
-                                                    &amp; Spreads</a>
-                                            </li>
-
-
-                                            <li>
-                                                <a href="#">Chicken,Meat
-                                                    &amp; Fish</a>
-                                            </li>
-
-
-                                            <li>
-                                                <a href="#">Organic
-                                                    &amp; Healthy Living</a>
-                                            </li>
-
-
-                                            <li>
-                                                <a href="#">Baby
-                                                    Care</a>
-                                            </li>
-
-
-                                            <li>
-                                                <a href="#">Pharma
-                                                    &amp; Wellness</a>
-                                            </li>
-
-
-                                            <li>
-                                                <a href="#">Cleaning
-                                                    Essentials</a>
-                                            </li>
-
-
-                                            <li>
-                                                <a href="#">Home
-                                                    &amp; Office</a>
-                                            </li>
-
-
-                                            <li>
-                                                <a href="#">Personal
-                                                    Care</a>
-                                            </li>
-
-
-                                            <li>
-                                                <a href="#">Pet
-                                                    Care</a>
-                                            </li>
-
-                                        </ul>
-
-                                    </div>
-                                </li>
-
-
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="#">Latest
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Become Partner</a>
-
-                                </li>
-
-                            </ul>
-
-                            <div class="nav-account ms-auto ">
-                                <div class="d-flex align-items-center gap-3">
-                                    <a href="#" class="tex-decoration-none" onclick="showsearchbox()"> <i
-                                            class="bi bi-search text-primary"></i>
-                                    </a>
-                                    <a href="Wishlist.html" class="tex-decoration-none "> <i
-                                            class="bi bi-bag-heart-fill text-danger"></i>
-                                    </a>
-                                    <a href="#" class="tex-decoration-none" onclick="showcardlist()">
-                                        <i class="bi bi-cart3 text-success"></i>
-                                    </a>
-
-
-                                    <div class="position-relative">
-                                        <a href="#" class="tex-decoration-none" data-bs-toggle="dropdown"> <i
-                                                class="bi bi-person-circle text-success"></i>
-                                        </a>
-                                        <ul class="dropdown-menu ">
-                                            <li><a href="user profile.html" class="dropdown-item"> <i
-                                                        class="bi bi-person-check"></i> View
-                                                    Profile</a></li>
-                                            <li><a href="index.html" class="dropdown-item text-decoration-none"> <i
-                                                        class="bi bi-power"></i>
-                                                    Logout</a></li>
-                                        </ul>
-                                    </div>
-
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
+                        <li>
+                          <a href="#">Pet Care</a>
+                        </li>
+                      </ul>
                     </div>
+                  </li>
 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Latest </a>
+                  </li>
 
-                    <!------------ navbar searchbox popup start------------>
-                    <div class="searchbox" id="searchbox">
-                        <div class="input-group rounded">
-                            <input type="search" class="form-control" placeholder="Username" placeholder="Search here."
-                                id="searchbox">
-                            <span class="input-group-text  bg-success "> <i onclick="hidesearchbox()"
-                                    class="bi bi-x-lg text-light"></i></span>
-                        </div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Become Partner</a>
+                  </li>
+                </ul>
 
+                <div class="nav-account ms-auto">
+                  <div class="d-flex align-items-center gap-3">
+                    <a
+                      href="#"
+                      class="tex-decoration-none"
+                      onclick="showsearchbox()"
+                    >
+                      <i class="bi bi-search text-primary"></i>
+                    </a>
+                    <a href="Wishlist.html" class="tex-decoration-none">
+                      <i class="bi bi-bag-heart-fill text-danger"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="tex-decoration-none"
+                      onclick="showcardlist()"
+                    >
+                      <i class="bi bi-cart3 text-success"></i>
+                    </a>
+
+                    <div class="position-relative">
+                      <a
+                        href="#"
+                        class="tex-decoration-none"
+                        data-bs-toggle="dropdown"
+                      >
+                        <i class="bi bi-person-circle text-success"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="user profile.html" class="dropdown-item">
+                            <i class="bi bi-person-check"></i> View Profile</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="index.html"
+                            class="dropdown-item text-decoration-none"
+                          >
+                            <i class="bi bi-power"></i> Logout</a
+                          >
+                        </li>
+                      </ul>
                     </div>
-
-                    <!--------------------- My card list start --------------------->
-                    <div class="mycartlist rounded px-3 py-4 " id="mycart">
-                        <div class="d-flex justify-content-between text-dark fw-bold">
-                            <p class="fs-5 ">My Cart</p>
-                            <i class="bi bi-x-lg" onclick="hidecardlist()"></i>
-                        </div>
-                        <div class=" bg-light p-1 ">
-                            <div>
-                                <div
-                                    class="bg-gray rounded px-1 py-2 my-2 d-flex justify-content-between align-items-start ">
-                                    <div class="rounded p-1 bg-white"><img src="Img/Veg (2).png" alt=""></div>
-                                    <div class="">
-                                        <p class="fs-5 fw-bold">Tomato</p>
-                                        <span class="fw-bold text-danger">₹80  </span><span
-                                            class="fw-bold">Kg</span>
-                                        <div class="col-4 d-flex mt-1 w-100">
-                                            <input class="btn btn-danger btn-sm text-white   w-50 fw-bold" id="minus"
-                                                onclick="minus()" type="button" value="-">
-                                            &nbsp;
-                                            <input class="text-center total fw-bold border border-gray rounded"
-                                                id="total" type="text" value="1" readonly style="width: 30px;"> &nbsp;
-                                            <input class="btn btn-success btn-sm text-white   w-50 fw-bold" id="plus"
-                                                onclick="plus()" type="button" value="+">
-                                        </div>
-
-
-                                    </div>
-                                    <div><i class=" fs-5 bi bi-trash"></i></div>
-                                </div>
-                                <div
-                                    class="bg-gray rounded px-1 py-2 my-2 d-flex justify-content-between align-items-start ">
-                                    <div class="rounded p-1 bg-white"><img src="Img/Veg (4).png" alt=""></div>
-                                    <div class="">
-                                        <p class="fs-5 fw-bold">Cauliflower</p>
-                                        <span class="fw-bold text-danger"> ₹70 </span><span
-                                            class="fw-bold">Kg</span>
-                                        <div class="col-4 d-flex mt-1  w-100">
-                                            <input class="btn btn-danger btn-sm text-white   w-50 fw-bold" id="minus"
-                                                onclick="minus()" type="button" value="-">
-                                            &nbsp;
-                                            <input class="text-center total fw-bold border border-gray rounded"
-                                                id="total" type="text" value="1" readonly style="width: 30px;"> &nbsp;
-                                            <input class="btn btn-success btn-sm text-white   w-50 fw-bold" id="plus"
-                                                onclick="plus()" type="button" value="+">
-                                        </div>
-
-                                    </div>
-                                    <div><i class=" fs-5 bi bi-trash"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between border-top border-secondary fw-bold mt-3 mx-3">
-                            <p class=" ">Total Price </p>
-                            <span> ₹150 </span>
-                        </div>
-                        <div class="col-12 d-flex justify-content-around mt-3 ">
-                            <a class="col-10 fw-bold btn btn-warning tex-decoration-none" href="vewcart.html">View
-                                Cart</a>
-                        </div>
-                    </div>
-
-                </nav>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
 
-        <!-- navigation for mobile -->
-
-        <div class="phone-navigation d-block d-lg-none position-fixed left-0 bottom-0 w-100">
-            <div class="d-flex justify-content-around pt-2">
-                <div class="text-center">
-                    <a href="index.html" class="text-decoration-none text-dark" id="Home">
-                        <i class="bi-house-door-fill"></i>
-                        <div class="mt-2">Home</div>
-                    </a>
-                </div>
-
-                <div class="text-center">
-                    <a href="Wishlist.html" class="text-decoration-none text-dark" id="About">
-                        <i class="bi-bag-heart-fill"></i>
-                        <div class="mt-2">Wishlist</div>
-                    </a>
-                </div>
-
-                <div class="text-center">
-                    <a href="vewcart.html" class="text-decoration-none text-dark" id="Contact">
-                        <i class="bi-person-lines-fill"></i>
-                        <div class="mt-2">Cart</div>
-                    </a>
-                </div>
-                <div class="text-center">
-                    <a href="#" class="text-decoration-none text-dark"  id="Login">
-                        <i class="bi-person-fill"></i>
-                        <div class="mt-2">Profile</div>
-                    </a>
-                </div>
-
+            <!------------ navbar searchbox popup start------------>
+            <div class="searchbox" id="searchbox">
+              <div class="input-group rounded">
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="Username"
+                  placeholder="Search here."
+                  id="searchbox"
+                />
+                <span class="input-group-text bg-success">
+                  <i onclick="hidesearchbox()" class="bi bi-x-lg text-light"></i
+                ></span>
+              </div>
             </div>
+
+            <!--------------------- My card list start --------------------->
+            <div class="mycartlist rounded px-3 py-4" id="mycart">
+              <div class="d-flex justify-content-between text-dark fw-bold">
+                <p class="fs-5">My Cart</p>
+                <i class="bi bi-x-lg" onclick="hidecardlist()"></i>
+              </div>
+              <div class="bg-light p-1">
+                <div>
+                  <div
+                    class="bg-gray rounded px-1 py-2 my-2 d-flex justify-content-between align-items-start"
+                  >
+                    <div class="rounded p-1 bg-white">
+                      <img src="Img/Veg (2).png" alt="" />
+                    </div>
+                    <div class="">
+                      <p class="fs-5 fw-bold">Tomato</p>
+                      <span class="fw-bold text-danger">₹80 </span
+                      ><span class="fw-bold">Kg</span>
+                      <div class="col-4 d-flex mt-1 w-100">
+                        <input
+                          class="btn btn-danger btn-sm text-white w-50 fw-bold"
+                          id="minus"
+                          onclick="minus()"
+                          type="button"
+                          value="-"
+                        />
+                        &nbsp;
+                        <input
+                          class="text-center total fw-bold border border-gray rounded"
+                          id="total"
+                          type="text"
+                          value="1"
+                          readonly
+                          style="width: 30px"
+                        />
+                        &nbsp;
+                        <input
+                          class="btn btn-success btn-sm text-white w-50 fw-bold"
+                          id="plus"
+                          onclick="plus()"
+                          type="button"
+                          value="+"
+                        />
+                      </div>
+                    </div>
+                    <div><i class="fs-5 bi bi-trash"></i></div>
+                  </div>
+                  <div
+                    class="bg-gray rounded px-1 py-2 my-2 d-flex justify-content-between align-items-start"
+                  >
+                    <div class="rounded p-1 bg-white">
+                      <img src="Img/Veg (4).png" alt="" />
+                    </div>
+                    <div class="">
+                      <p class="fs-5 fw-bold">Cauliflower</p>
+                      <span class="fw-bold text-danger"> ₹70 </span
+                      ><span class="fw-bold">Kg</span>
+                      <div class="col-4 d-flex mt-1 w-100">
+                        <input
+                          class="btn btn-danger btn-sm text-white w-50 fw-bold"
+                          id="minus"
+                          onclick="minus()"
+                          type="button"
+                          value="-"
+                        />
+                        &nbsp;
+                        <input
+                          class="text-center total fw-bold border border-gray rounded"
+                          id="total"
+                          type="text"
+                          value="1"
+                          readonly
+                          style="width: 30px"
+                        />
+                        &nbsp;
+                        <input
+                          class="btn btn-success btn-sm text-white w-50 fw-bold"
+                          id="plus"
+                          onclick="plus()"
+                          type="button"
+                          value="+"
+                        />
+                      </div>
+                    </div>
+                    <div><i class="fs-5 bi bi-trash"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between border-top border-secondary fw-bold mt-3 mx-3"
+              >
+                <p class=" ">Total Price</p>
+                <span> ₹150 </span>
+              </div>
+              <div class="col-12 d-flex justify-content-around mt-3">
+                <a
+                  class="col-10 fw-bold btn btn-warning tex-decoration-none"
+                  href="vewcart.html"
+                  >View Cart</a
+                >
+              </div>
+            </div>
+          </nav>
         </div>
+      </div>
 
+      <!-- navigation for mobile -->
 
+      <div
+        class="phone-navigation d-block d-lg-none position-fixed left-0 bottom-0 w-100"
+      >
+        <div class="d-flex justify-content-around pt-2">
+          <div class="text-center">
+            <a
+              href="afterlogin.html"
+              class="text-decoration-none text-dark"
+              id="Home"
+            >
+              <i class="bi-house-door-fill"></i>
+              <div class="mt-2">Home</div>
+            </a>
+          </div>
+
+          <div class="text-center">
+            <a
+              href="Wishlist.html"
+              class="text-decoration-none text-dark"
+              id="About"
+            >
+              <i class="bi-bag-heart-fill"></i>
+              <div class="mt-2">Wishlist</div>
+            </a>
+          </div>
+
+          <div class="text-center">
+            <a
+              href="vewcart.html"
+              class="text-decoration-none text-dark"
+              id="Contact"
+            >
+              <i class="bi-person-lines-fill"></i>
+              <div class="mt-2">Cart</div>
+            </a>
+          </div>
+          <div class="text-center dropdown">
+            <a
+              class="text-decoration-none text-dark"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="bi-list"></i>
+              <div class="mt-2">Profile</div>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item fs-5" href="user profile.html">
+                  <i class="bi bi-info-circle"></i> Personal Information</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item fs-5" href="address.html"
+                  ><i class="bi bi-pin-map-fill"></i>Delivery Address</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item fs-5" href="order.html"
+                  ><i class="bi bi-cart4"></i>My order</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item fs-5" href="index.html"
+                  ><i class="bi bi-power"></i>Logout</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
-
     <!----------------------------------------------- user profile section start ----------------------------------------------->
-    <div class="col-md-11 mx-auto profile-page-details">
-        <div class="row ">
-            <div class="left-side-nav col-md-3 ">
-
-
-                <div class="left-side ">
-
-                    <div class="row user-profile py-2 px-3  text-center "  >
-                        <div class="col" style="height: 60px; width: 85px ;">
-                            <img src="Img/afterlogin.png" alt="" style="height: 80px; width: 80px ; object-fit: cover;">
-                            <!-- <i class="edit-pic fs-4 bi bi-pencil-square"></i> -->
-
-                        </div>
-                        <div class="col-12 align-center text-center mt-5">
-                            <p> Hello, <br> <strong> Aryan Sharma</strong></p>
-                        </div>
-
-                    </div>
-
-                    <div class="row profile-left-nav-list mt-2 bg-light ">
-                        <ul class="list-unstyled  py-2 px-3 ">
-                            <a href="user profile.html" class="">
-                                <li class="px-2 py-1 my-1 fs-5 bg-success text-white"><i class="bi bi-info-circle"></i> Personal
-                                    Information</li>
-                            </a>
-
-                            <a href="address.html">
-                                <li class="px-2 py-1 my-1 fs-5"><i class="bi bi-pin-map-fill"></i>
-                                    Delivery Address</li>
-                            </a>
-
-                            <a href="order.html">
-                                <li class="px-2 py-1 my-1 fs-5"><i class="bi bi-cart4"></i> My order</li>
-                            </a>
-
-                            <a href="index.html">
-                                <li class="px-2 py-1 my-1 fs-5"><i class="bi bi-power"></i> Logout</li>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-
+    <div class="col-11 mx-auto profile-page-details">
+      <div class="row">
+        <div class="left-side-nav col-lg-3">
+          <div class="left-side">
+            <div class="row user-profile py-2 px-3 text-center">
+              <div class="col" style="height: 60px; width: 85px">
+                <img
+                  src="Img/afterlogin.png"
+                  alt=""
+                  style="height: 80px; width: 80px; object-fit: cover"
+                />
+                <!-- <i class="edit-pic fs-4 bi bi-pencil-square"></i> -->
+              </div>
+              <div class="col-12 align-center text-center mt-5">
+                <p>
+                  Hello, <br />
+                  <strong> Aryan Sharma</strong>
+                </p>
+              </div>
             </div>
 
-            <!-------------------------------- Here the main user right profile section is start -------------------------------->
-            <div class="col-md-9  ">
+            <div class="row profile-left-nav-list mt-2 d-lg-block d-none">
+              <ul class="list-unstyled py-2 px-3">
+                <a href="user profile.html" class="">
+                  <li class="px-2 py-1 my-1 fs-5 bg-success text-white">
+                    <i class="bi bi-info-circle"></i> Personal Information
+                  </li>
+                </a>
 
-                <div class="wishlist-page-right px-4 pt-2 pb-4 right-side-content rounded" >
+                <a href="address.html">
+                  <li class="px-2 py-1 my-1 fs-5">
+                    <i class="bi bi-pin-map-fill"></i> Delivery Address
+                  </li>
+                </a>
 
-                    <div class=" py-2 ">
-                        <p class="fs-3 ">
-                            <strong>My Information</strong>
-                        </p>
-                    </div>
+                <a href="order.html">
+                  <li class="px-2 py-1 my-1 fs-5">
+                    <i class="bi bi-cart4"></i> My order
+                  </li>
+                </a>
 
-                    <div>
-                        <form>
-                            <div class="row">
-                                <div class="mb-3 col-4">
-                                    <label for="exampleInputEmail1" class="form-label fw-bold">First Name</label>
-                                    <input type="text" class="form-control" placeholder="Aryan ">
-                                </div>
-                                <div class="mb-3 col-4 ms-5">
-                                    <label for="exampleInputEmail1" class="form-label fw-bold">Last Name</label>
-                                    <input type="text" class="form-control" placeholder="Sharma">
-                                </div>
-                            </div>
-
-                            <span class="fw-bold">your Gender</span>
-                            <div class="d-flex align-items-center gap-3 my-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1" checked>
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Male
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2">
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        Female
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="mb-3 col-4">
-                                <label for="exampleInputEmail1" class="form-label fw-bold">Email </label>
-                                <input type="email" class="form-control" placeholder="pururajsbl20">
-                            </div>
-
-                            <div class="mb-3 col-9">
-                                <label for="exampleInputEmail1" class="form-label fw-bold">Address </label>
-                                <input type="text" class="form-control"
-                                    placeholder="In front of SDM court Sambhal, 244302">
-                            </div>
-                            <button type="submit" class="btn btn-success mt-4">Chenge</button>
-                        </form>
-                    </div>
-
-                </div>
-
+                <a href="index.html">
+                  <li class="px-2 py-1 my-1 fs-5">
+                    <i class="bi bi-power"></i> Logout
+                  </li>
+                </a>
+              </ul>
             </div>
-
+          </div>
         </div>
+
+        <!-------------------------------- Here the main user right profile section is start -------------------------------->
+        <div class="col-lg-9">
+          <div
+            class="wishlist-page-right px-4 pt-2 pb-4 right-side-content rounded mb-lg-4 my-lg-0 my-4"
+          >
+            <div class="py-2">
+              <p class="fs-3">
+                <strong>My Information</strong>
+              </p>
+            </div>
+
+            <div>
+              <form>
+                <div class="row">
+                  <div class="mb-3 col-md-4 col-sm-6">
+                    <label for="exampleInputEmail1" class="form-label fw-bold"
+                      >First Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Aryan "
+                    />
+                  </div>
+                  <div class="mb-3 col-md-4 col-sm-6 ms-md-5">
+                    <label for="exampleInputEmail1" class="form-label fw-bold"
+                      >Last Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Sharma"
+                    />
+                  </div>
+                </div>
+
+                <span class="fw-bold">your Gender</span>
+                <div class="d-flex align-items-center gap-md-5 gap-4 my-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Female
+                    </label>
+                  </div>
+                </div>
+
+                <div class="mb-3 col-md-4">
+                  <label for="exampleInputEmail1" class="form-label fw-bold"
+                    >Email
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="pururajsbl20"
+                  />
+                </div>
+
+                <div class="mb-3 col-md-9">
+                  <label for="exampleInputEmail1" class="form-label fw-bold"
+                    >Address
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="In front of SDM court Sambhal, 244302"
+                  />
+                </div>
+                <div class="col-md-4 ">
+                  <button type="submit" class="btn btn-success mt-4 w-100">
+                    Chenge Now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!----------------------------------------------- user profile section end ----------------------------------------------->
 
-
-
     <!----------------------------------------------- Footer section start ----------------------------------------------->
 
-    <div class="footer py-5 mt-5">
-
-        <div class="col-11 mx-auto px-4 py-5">
-
-
-            <div class="row g-3">
-                <div class="col-lg-3 col-sm-8">
-                    <div class=" ">
-                        <h4 class="fw-bold"> Grocery </h4>
-                        <p class="text-secondary"> Online Grossry shopping platform where user find their choice and
-                            we
-                            help the user to provide best and good grossery product in an affordable price</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-sm-4">
-                    <div class=" ">
-                        <h4 class="fw-bold"> New Products </h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    Vegitables
-
-
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    Fruits
-                                </a></li>
-                            <li><a href="#" class="text-decoration-none">
-                                    <i class="bi bi-caret-right-fill"></i> Beverages
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-sm-4">
-                    <div class=" ">
-                        <h4 class="fw-bold"> Quick Links </h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    About
-
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    Offers & Discounts</a></li>
-                            <li><a href="#" class="text-decoration-none">
-                                    <i class="bi bi-caret-right-fill"></i> Get Coupan
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none"><i class="bi bi-caret-right-fill"></i>
-                                    Contact
-                                    Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-4">
-                    <div class=" ">
-                        <h4 class="fw-bold"> Help & Support </h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-decoration-none "><i class="bi bi-caret-right-fill"></i> FAQ
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none "><i class="bi bi-caret-right-fill"></i>
-                                    Terms &
-                                    Conditions
-                                </a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none ">
-                                    <i class="bi bi-caret-right-fill"></i> Report a Payment Issue</a>
-                            </li>
-                            <!-- <li><a href="#" class="text-decoration-none "><i class="bi bi-caret-right-fill"></i> Privacy
-                                    Policy</a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-2 col-sm-4">
-                    <div class=" ">
-                        <h4 class="fw-bold"> Contact Us </h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-danger text-decoration-none"> <i class="bi bi-telephone-inbound fs-6"></i>
-                                    +38192310201</a> </li>
-                            <li><a href="#" class="text-danger text-decoration-none"> <i class="bi bi-geo-alt-fill fs-6"></i>
-                                    Gurgaon Delhi NCR 122003</a> </li>
-                            <li><a href="#" class="text-danger text-decoration-none"> <i class="bi bi-envelope fs-6"></i>
-                                    bitspanindia.com</a> </li>
-                        </ul>
-
-                        <div class="social-icon d-flex align-items-center gap-3">
-                            <a href="#"><i class="bi bi-facebook text-primary"></i>
-                            </a>
-                            <a href="#"><i class="bi bi-instagram text-danger"></i>
-                            </a>
-                            <a href="#"><i class="bi bi-twitter text-primary"></i>
-                            </a>
-                            <a href="#"><i class="bi bi-whatsapp text-success"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
+    <div class="footer py-5">
+      <div class="col-11 mx-auto px-4 py-5">
+        <div class="row g-3">
+          <div class="col-lg-3 col-sm-8">
+            <div class=" ">
+              <h4 class="fw-bold">E-Shop</h4>
+              <p class="text-secondary">
+                Online Grossry shopping platform where user find their choice
+                and we help the user to provide best and good grossery product
+                in an affordable price
+              </p>
             </div>
+          </div>
 
+          <div class="col-lg-2 col-sm-4">
+            <div class=" ">
+              <h4 class="fw-bold">New Products</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-decoration-none"
+                    ><i class="bi bi-caret-right-fill"></i>
+                    Vegitables
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none"
+                    ><i class="bi bi-caret-right-fill"></i>
+                    Fruits
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">
+                    <i class="bi bi-caret-right-fill"></i> Beverages
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-sm-4">
+            <div class=" ">
+              <h4 class="fw-bold">Quick Links</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-decoration-none"
+                    ><i class="bi bi-caret-right-fill"></i>
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none"
+                    ><i class="bi bi-caret-right-fill"></i> Offers &
+                    Discounts</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">
+                    <i class="bi bi-caret-right-fill"></i> Get Coupan
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none"
+                    ><i class="bi bi-caret-right-fill"></i> Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-4">
+            <div class=" ">
+              <h4 class="fw-bold">Help & Support</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-decoration-none"
+                    ><i class="bi bi-caret-right-fill"></i> FAQ
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none"
+                    ><i class="bi bi-caret-right-fill"></i>
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">
+                    <i class="bi bi-caret-right-fill"></i> Report a Payment
+                    Issue</a
+                  >
+                </li>
+                <!-- <li><a href="#" class="text-decoration-none "><i class="bi bi-caret-right-fill"></i> Privacy
+                                      Policy</a>
+                              </li> -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-sm-4">
+            <div class=" ">
+              <h4 class="fw-bold">Contact Us</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-danger text-decoration-none">
+                    <i class="bi bi-telephone-inbound fs-6"></i>
+                    +91-9999999999</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-danger text-decoration-none">
+                    <i class="bi bi-geo-alt-fill fs-6"></i> Near sdm court
+                    sambhal, 244302</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-danger text-decoration-none">
+                    <i class="bi bi-envelope fs-6"></i> pururajsbl@gmail.com</a
+                  >
+                </li>
+              </ul>
+
+              <div class="social-icon d-flex align-items-center gap-3">
+                <a href="#"><i class="bi bi-facebook text-primary"></i> </a>
+                <a href="#"><i class="bi bi-instagram text-danger"></i> </a>
+                <a href="#"><i class="bi bi-twitter text-primary"></i> </a>
+                <a href="#"><i class="bi bi-whatsapp text-success"></i> </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div style="background: rgb(137, 197, 47);">
-        <marquee behavior="" direction="left">
-
-            <div class=" ">
-                <p class="text-light fw-bold pt-2">Copyright ©2022 All rights reserved | This Website is made by
-                    <span class="text-success">Team</span>
-                </p>
-
-            </div>
-        </marquee>
+    <div style="background: rgb(137, 197, 47)">
+      <marquee behavior="" direction="left">
+        <div class=" ">
+          <p class="text-light fw-bold pt-2">
+            Copyright © All rights reserved | This Website is made by
+            <span class="text-success">Pururaj</span>
+          </p>
+        </div>
+      </marquee>
     </div>
 
     <!----------------------------------------------- Footer section end ----------------------------------------------->
 
-
     <!-- bootstrap js link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
